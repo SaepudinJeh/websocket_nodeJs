@@ -1,12 +1,13 @@
 const express = require('express');
+const path = require('path');
 const createError = require('http-errors');
 
 const { middlewares } = require('./middlewares');
-const router = require('./routes');
 const app = express();
 
 middlewares(app);
-router(app);
+
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use((req, res, next) => {
   const error = createError(404);

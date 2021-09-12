@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async defer src="https://code.iconify.design/2/2.0.4/iconify.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Lumintu Chat App</title>
+</head>
+<body>
+  <h1 class="title">Lumintu Chat</h1>
+  <main class="main">
+    <div class="name">
+      <span class="iconify" data-icon="ri:user-5-fill"></span>
+      <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="23">
+    </div>
+
+    <ul class="message-container" id="message-container">
+      <li class="message-left">
+        <p class="message">
+          Lorem ipsum
+          <span>Pocary . 26 Agustus 10:41</span>
+        </p>
+      </li>
+
+      <li class="message-right">
+        <p class="message">
+          Lorem ipsum
+          <span>Pocary . 26 Agustus 10:41</span>
+        </p>
+      </li>
+
+      <li class="message-feedback">
+        <p class="feedback" id="feedback">
+          Saepudin is typing a message
+        </p>
+      </li>
+    </ul>
+    
+    <form class="message-form" id="message-form">
+      <input type="text" name="message" id="message-input" class="message-input">
+
+      <div class="v-divider"></div>
+
+      <button name="button send message" type="submit" class="send-button">
+        <span class="text-message">kirim</span>
+        <span class="iconify" data-icon="carbon:send-alt-filled"></span>
+      </button>
+    </form>
+
+  </main>
+  <h3 class="clients-total" id="client-total">Total Client : 2</h3>
+</body>
+</html>
